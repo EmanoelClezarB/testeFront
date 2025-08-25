@@ -1,0 +1,33 @@
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Poppins:wght@900&display=swap" rel="stylesheet">
+
+<div class="sidebar" [class.collapsed]="sidebarCollapsed" [class.active]="sidebarActive" id="sidebar">
+    <button class="toggle-button" (click)="toggleSidebar()"></button>
+    
+    <div class="sidebar-item novo-chat" (click)="goToHome()">Novo chat</div>
+    <div class="sidebar-item historico" (click)="goToHistory()">Histórico</div>
+    <div class="sidebar-item sobre active">Sobre a IA Mohawk Brasil</div>
+</div>
+
+<div class="main-content">
+    <button class="menu-toggle" [style.display]="menuToggleDisplay" (click)="toggleMenu()">☰</button>
+   
+    <h2 class="about-title">Sobre a IA Mohawk Brasil</h2>
+
+   <div class="section">
+<img src="/home/emanoel/mohawk-brasil-app/1.png" alt="Mohawk Brasil logo " />
+
+  <h2>Apresentação da IA Mohawk</h2>
+  <p>
+    Apresentamos nossa solução de Inteligência Artificial para Contabilidade, desenvolvida para otimizar processos financeiros, reduzir riscos e aumentar a eficiência operacional. A IA atua como um copiloto contábil, automatizando lançamentos, conciliando dados bancários, validando informações fiscais e gerando relatórios gerenciais em tempo real. Com isso, elimina retrabalho, acelera fechamentos contábeis e garante compliance com a legislação vigente. Além da automação, a solução entrega insights estratégicos baseados em análise de dados históricos e preditivos, apoiando gestores na tomada de decisão com mais segurança e clareza. O resultado é claro: menos custos operacionais, mais confiabilidade nos números e maior agilidade no dia a dia contábil. A IA não substitui o contador, mas amplia sua capacidade, permitindo que ele foque no que realmente importa: a estratégia e o crescimento do negócio.
+  </p>
+</div>
+
+    <div class="section">
+        <h2>Elias Assistente IA</h2>
+        <img src="assets/Avatar-Elias.png" class="avatar-elias" alt="Avatar Elias">
+
+        <p>
+           O Elias foi criado para ser o copiloto do time contábil, atuando de forma proativa na automação de tarefas, no suporte ao compliance e na geração de insights estratégicos. Ele não é apenas um sistema, mas um personagem inteligente e confiável, pronto para interagir com a equipe e facilitar o dia a dia.
+        </p>
+    </div>
+</div>
