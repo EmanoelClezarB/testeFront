@@ -4,13 +4,60 @@
             box-sizing: border-box;
         }
         
-        body {
-            font-family: 'Lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            /*background: url('BG.jpg') no-repeat center center fixed;*/
-            background-size: cover;
-            height: 100vh; 
-            display: flex;
-        }
+   body {
+    font-family: 'Lato', sans-serif;
+    background: url('https://github.com/EmanoelClezarB/testeFront/blob/main/src/assets/BG.jpg?raw=true') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Seção branca centralizada */
+.section {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 18px;
+    max-width: 800px;
+    width: 100%;
+    text-align: center; /* centraliza título e logo */
+    box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/* Logo dentro da seção */
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo-container img {
+    height: 90px;
+}
+
+/* Títulos e textos */
+.section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    color: #d32f2f;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.section p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 900;
+    text-align: left;
+}
+
 
         .sidebar {
             width: 300px; 
